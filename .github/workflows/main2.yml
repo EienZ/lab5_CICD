@@ -1,0 +1,13 @@
+name: Display Current System Date
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  display_system_date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display System Date
+        run: date
